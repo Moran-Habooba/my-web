@@ -71,3 +71,20 @@ document.addEventListener("selectstart", function (e) {
   e.preventDefault();
   // alert("העתקה אסורה!");
 });
+
+function showPopup() {
+  Swal.fire({
+    title: "HELLO !",
+    text: "This site is copyrighteds",
+    icon: "info",
+    confirmButtonText: "אישור",
+  });
+}
+// onclick="showPopup()"
+document.addEventListener("contextmenu", function (event) {
+  // מניעת הפעלת התפריט הנפתח ברקע
+  event.preventDefault();
+
+  // הפעלת הפונקציה showPopup()
+  showPopup();
+});
