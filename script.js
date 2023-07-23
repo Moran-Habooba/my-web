@@ -69,5 +69,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("selectstart", function (e) {
   e.preventDefault();
-  // alert('העתקה אסורה!');
+  // alert("העתקה אסורה!");
 });
