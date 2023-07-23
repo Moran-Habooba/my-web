@@ -1,0 +1,456 @@
+@charset "UTF-8";
+body {
+  cursor: default;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+header nav ul li:hover {
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero {
+  background-color: #f2f2f2;
+  padding: 0px 0px 15px 0px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.Projects-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  #hero {
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 50px;
+  }
+  .hero-content p {
+    font-size: 24px;
+  }
+}
+#about {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+.about {
+  text-align: left;
+  color: rgb(38, 37, 39);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.round-bottom {
+  overflow: hidden;
+  border-radius: 0 0 50% 50%;
+}
+
+img {
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .row.flex-lg-row-reverse.align-items-center.g-5.round-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .col-lg-3 {
+    margin-top: 20px; /* הוספת מרווח בין התיבות במסכים קטנים */
+  }
+  .col-lg-6 {
+    margin-bottom: 15px; /* הוספת מרווח בין התמונה לכיתוב במסכים קטנים */
+  }
+  .round-bottom {
+    border-radius: 0px;
+  }
+  .p_about {
+    text-align: left;
+    margin-left: 15px;
+  }
+  .img-fluid {
+    margin-left: 20%;
+  }
+}
+#contact {
+  padding: 100px 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.form-card {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 650px;
+}
+
+.trin-trin {
+  animation-name: trin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.icon-phone {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC1klEQVRoQ+2Z21XbQBCG/7ULCKkgTgUxFcR0YCrAl7wHKvBQQeA9Fu4AqCCkgogKcCqIU4C1OaONOLYl7e5IstY+B73wwMwy385l/10UjvxTRx4/3gBCZ7A8AyPqQ3XeOQPUyTMWtHLa7ckgD8CBd3APhZ7n34wxp1NP28bN8gATehEEbwJSOMN3emo8Oo8F8wBT0h5+2yYHBsD17K79TQSNK0R0IwZvwKGohJ6g8Fm2tn7E/Hoo82nGuqiEFgAuRMtrrBDRe5FPQ8ZFGSAozMTrr3GKBcViv5oOeYAvNIDGD/G6gfqg6Bw4QRd/KgAsEdFHsV9Nh+KTeEIxFD6J1w5QRsUA09kNoL6KAQKcByUAxCPxXgjwG2v029ZF5WJumgo03wPtL9YYHMYUyrZ9Sr7nQbDgjQwr+1iVdvHLWUYB6n4zJvuNbEJ2WaExRpRmKthnB5hamznoPSDbMfed2H4mnGNOD8G239oDWVQ2acEiLkk10DIUhDsDHJm9F2Kscdb2/PcvIbYcUQ9dvJTussYCEY1DZMEvAyYLl1D4ZoEIcivzB3CXEhBgrMoATCnxpaVcYrQMIQPgLNjPBlNhWhGi2bWzJ0bEd487aAwAPCDBrVRPyQFMKY2gcGcNkBs7wVXpdDLB882vv7UOj2aFGFqxClghUTEsr3/VAEwmfMQej9hxblfLgrftiMYSCc5316oO4A+xXVJVgn8Fyz/f1AMQQWAJpQjQl7mycTbLfwONn4iI++X1qw9geqLaU4xv4Jnd3gB8G1sa8K79XgGM5OBLEKvTD3VjLfTfO4CBOEFXU6VXDRd1KwBZEEaG86htLhutAmQgRgSS4IWjPA9BALKy6oBBeIT6PtXkQYIBbIbCMgQpjPzp8iAAMhhWth3wC+DQ+x8qBS/gzRxkrunh83tu+gR9KPSh0Ut/bpabxjMSDHfv34cD4ANZYPMGUHHjGnM7+gz8A29K+DHRISQ9AAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+@keyframes trin {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%, 32%, 44%, 56%, 68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%, 35%, 47%, 59%, 71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%, 38%, 50%, 62%, 74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%, 41%, 53%, 65%, 77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.float-text {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #192227;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.float-card-info {
+  display: none;
+  width: 100px;
+  background-color: #263238;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out right;
+  cursor: pointer;
+  background-color: #181e22;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  border-radius: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.float-card-info p {
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.float-card-info.active {
+  display: block;
+  padding: 8px;
+}
+
+.tech-container {
+  width: 110px;
+  height: 110px;
+  background-color: rgb(246, 231, 231);
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+  transition: 0.3s all;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tech-container:hover {
+  background-color: #c6afcd;
+}
+
+.btn {
+  margin-bottom: 10%;
+}
+
+.btn-form,
+#btn-form:hover {
+  background-color: #c6afcd;
+}
+
+.form-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 650px;
+}
+
+.container img {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.container p {
+  margin-top: -12px;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.tech-container {
+  animation: slideInOut 10s linear infinite;
+}
+
+@media only screen and (max-width: 767px) {
+  .tech-container {
+    margin-left: 5px;
+  }
+}
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.dark-mode {
+  background-color: #212529;
+  color: white;
+}
+
+.dark-mode .pheader {
+  color: #212529;
+}
+
+.toggle-dark-mode {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.switch {
+  transform: scale(0.6);
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 60vmin;
+  height: 50vmin;
+  background-image: conic-gradient(from var(--border-angle), rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(255, 255, 255)), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - var(--border-size) * 2) calc(100% - var(--border-size) * 2), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 5s linear infinite paused;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box:hover {
+  animation-play-state: running;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}/*# sourceMappingURL=style.css.map */

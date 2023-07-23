@@ -1,0 +1,64 @@
+#about {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+.about {
+  text-align: left;
+  color: rgb(38, 37, 39);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+.round-bottom {
+  overflow: hidden;
+  border-radius: 0 0 50% 50%;
+}
+img {
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .row.flex-lg-row-reverse.align-items-center.g-5.round-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-lg-3 {
+    margin-top: 20px; /* הוספת מרווח בין התיבות במסכים קטנים */
+  }
+
+  .col-lg-6 {
+    margin-bottom: 15px; /* הוספת מרווח בין התמונה לכיתוב במסכים קטנים */
+  }
+  .round-bottom {
+    border-radius: 0px;
+  }
+  .p_about {
+    text-align: left;
+    margin-left: 15px;
+  }
+  .img-fluid {
+    margin-left: 20%;
+  }
+}

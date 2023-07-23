@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./scass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="site-body">
+      <!-- Header -->
+      <header>
+        <nav>
+          <ul>
+            <p
+              style="
+                color: white;
+                text-align: right;
+                display: inline;
+                float: right;
+              "
+            >
+              בס"ד
+            </p>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="toggle-dark-mode">
+            <label class="switch">
+              <input type="checkbox" onchange="toggleDarkMode()" />
+              <span class="slider round"></span>
+            </label>
+            <span style="color: white" class="toggle-label"
+              >Toggle Dark Mode</span
+            >
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        style="
+          background-image: url(./image/2.jpg);
+          background-repeat: no-repeat;
+          /* height: 80vh; */
+        "
+      >
+        <div class="hero-content">
+          <img class="col-lg-7" src="./image/logo.png" alt="" />
+          <h1
+            class="animate-charcter"
+            style="font-size: 30px; font-weight: 800"
+          >
+            Full Stack Developer
+          </h1>
+          <p class="pheader" style="font-weight: 650">
+            Welcome to my website. Take a look at some of my projects below.
+          </p>
+          <a href="#projects" class="Projects-button"> My Projects</a>
+        </div>
+      </section>
+
+      <div
+        class="row flex-lg-row-reverse align-items-center g-5 py-5 round-bottom"
+        id="about"
+        style="margin-right: 0px; background-color: #b5afcf; margin-top: 0"
+      >
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./image/moran.png"
+            class="d-block mx-lg-3 img-fluid"
+            width="250"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-3">
+          <h1 class="display-5 fw-bold lh-1 mb-md-3">Nice to meet</h1>
+          <p class="p_about">
+            Hello, I'm Moran, a current student Full Stack development.
+            <br />
+            I am passionate about exploring new technologies and building
+            quality web applications.
+            <br />
+            I am proficient in essential development tools like HTML, CSS and
+            JavaScript. What truly drives me is the ability to turn ideas into
+            reality. I enjoy the process of analyzing problems, Finding
+            solutions, and bringing them to life through elegant and functional
+            code. I strive to write clean and maintainable code,and I believe
+            that teamwork and effective communication are vital in delivering
+            successful projects. I'm always eager to learn from others,
+            contribute to team efforts, and embrace new challenges. I
+            continuously strive to improve my skills and follow industry best
+            practices.
+          </p>
+        </div>
+      </div>
+
+      <!-- Used  Techologys -->
+
+      <div
+        class="h-50 text-center p-5 display-1"
+        style="
+          font-family: 'Nunito', sans-serif;
+          font-weight: 700;
+          font-size: 50px;
+        "
+      >
+        Used Techologys
+      </div>
+      <div
+        class="container text-center text-white align-items-center"
+        id="technologies"
+      >
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/html-5-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="HTML logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              HTML
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/bootstrap.jpg"
+              width="50px"
+              height="50px"
+              alt="Bootstrap LOGO"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              Bootstrap
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/css-3-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="CSS Logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              CSS
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/github-142-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="GitHub logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              GitHub
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/javascript-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="JavaScript LOGO"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              JavaScript
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/sass-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="Sass logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              Sass
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/typescript-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="TypeScipt Logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              TypeScipt
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/vscode-svgrepo-com.jpg"
+              width="50px"
+              height="50px"
+              alt="VsCode Logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              VsCode
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/oop1.png"
+              width="50px"
+              height="50px"
+              alt="TypeScipt Logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              OOP
+            </p>
+          </div>
+          <div class="col-6 col-md-auto tech-container">
+            <img
+              src="./logos/API.jpg"
+              width="50px"
+              height="50px"
+              alt="TypeScipt Logo"
+              class="m-3"
+            />
+            <p
+              style="
+                font-family: 'Nunito', sans-serif;
+                font-weight: 400;
+                color: black;
+              "
+            >
+              API
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- project -->
+      <h2
+        class="text-center pt-5 mt-5"
+        style="font-family: 'Nunito', sans-serif; font-weight: 900"
+        id="projects"
+      >
+        My Projects
+      </h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/1_Im0.jpeg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mp3 player</h5>
+                <a
+                  href="https://moran-habooba.github.io/mp3-player2/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> Bootstrap , HTML5,Css.</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/mp3-player2"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/top-budget-categories-1024x683.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Budget App</h5>
+                <a
+                  href="https://moran-habooba.github.io/Budget-App/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date">local storage , HTML5,Css ,canvas</span
+                  ><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/Budget-App"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/memory.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 130px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">A memory game of your choice</h5>
+                <a
+                  href="https://moran-habooba.github.io/Memory-game-API/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> Api,Bootstrap , HTML5,Css.</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/Memory-game-API"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/rock paper scissors.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 160px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rock, Paper, Scissors</h5>
+                <a
+                  href="https://moran-habooba.github.io/game-Rock--Paper--Scissors/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> HTML5,Css,JavaScript </span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/game-Rock--Paper--Scissors"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ************ -->
+        <div class="row justify-content-center">
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/איקס עיגול.png"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">TIC Tac Toe</h5>
+                <a
+                  href="https://moran-habooba.github.io/tic-tac-toe-game/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> Classes, HTML5,Css,JavaScript </span
+                  ><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/tic-tac-toe-game"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/Calculator-project.jpg"
+                class="card-img-top containe-fluidr mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Calculator project</h5>
+                <a
+                  href="https://moran-habooba.github.io/--Calculator-project-------/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date">
+                    Bootstrap , HTML5,Css,JavaScript,modules </span
+                  ><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/--Calculator-project-------"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/51okr7JU0KL.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Country App</h5>
+                <a
+                  href="https://moran-habooba.github.io/countryApp/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> HTML5,Css,Api</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/countryApp"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/סמיילי.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Random-Joke-Generator</h5>
+                <a
+                  href="https://moran-habooba.github.io/Random-Joke-Generator/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> HTML5,Css,Api</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/Random-Joke-Generator"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ****************** -->
+        <div class="row justify-content-center">
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/parashat-hashavua-16-1.png"
+                class="card-img-top container mt-4"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Shabbat time</h5>
+                <a
+                  href="https://moran-habooba.github.io/shabbat-time/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> Api , HTML5,Css.</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/shabbat-time"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/ShowImage.jpeg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ping Pong Game</h5>
+                <a
+                  href="https://moran-habooba.github.io/Ping-Pong-Game/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> Canvas , HTML5,Css.</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/Ping-Pong-Game"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/Drawing-App.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Drawing App</h5>
+                <a
+                  href="https://moran-habooba.github.io/Drawing-App/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> canvas ,HTML5,Css.</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/Drawing-App"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/memory2.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">A caramel memory game</h5>
+                <a
+                  href="https://moran-habooba.github.io/A-caramel-memory-game--typescript/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date">
+                    HTML5,Css,TypeScript,local storage</span
+                  ><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/A-caramel-memory-game--typescript"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="card" style="height: 450px; width: 300px">
+              <img
+                src="./image project/לוגו בלי רקע.jpg"
+                class="card-img-top container mt-4"
+                alt="..."
+                style="height: 154px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Torah project</h5>
+                <a
+                  href="https://moran-habooba.github.io/Torah-project-----/"
+                  target="_blank"
+                  class="btn btn-secondary w-100"
+                  >Try It Out</a
+                >
+                <div class="card-footer bg-white">
+                  <strong>practice:</strong
+                  ><span class="w-date"> HTML5,Css.</span><br />
+                  <span>
+                    <a
+                      style="color: blueviolet"
+                      href="https://github.com/Moran-Habooba/Torah-project-----"
+                      target="_blank"
+                    >
+                      <strong
+                        ><i class="bi bi-github"></i> Github Repo</strong
+                      ></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button id="loadMoreButton" class="btn btn-secondary">Load More</button>
+      </div>
+
+      <!-- Contact Section -->
+      <div
+        style="
+          background-color: #b5afcf;
+          background-image: url(./image/contact_us.png);
+          background-size: 1500px;
+          background-repeat: no-repeat;
+          /* margin-top: 60px; */
+        "
+      >
+        <form
+          action="https://formspree.io/f/xaygwlgb"
+          method="POST"
+          target="_blank"
+          id="contact"
+          class="contact"
+        >
+          <div class="d-flex" style="height: 100%">
+            <div class="//card// form-card m-auto mt-5 text-left pb-4;">
+              <div class="card-header ;">
+                <h3 style="margin-top: 15px">
+                  Contact<i class="bi ms-3 icon-phone trin-trin"></i>
+                </h3>
+              </div>
+              <div class="row text-center" style="margin: 0px !important">
+                <div class="col-md-6 mt-5 px-5">
+                  <div class="mb-3">
+                    <label for="userMailInput" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="userMailInput"
+                      placeholder="moran@example.com"
+                      name="Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="userNameInput" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="userNameInput"
+                      placeholder="israel israeli"
+                      name="Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="userMassage" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="userMessage"
+                      rows="3"
+                      style="resize: none"
+                      name="Message"
+                    ></textarea>
+                  </div>
+                  <a href="https://formspree.io/f/xaygwlgb; ">
+                    <button
+                      id="btn-form"
+                      class="btn btn-form btn-outline-secondary w-75"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </a>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <h4>My GitHub</h4>
+
+                  <a
+                    href="https://github.com/Moran-Habooba"
+                    onclick="window.open(this.href); return false;"
+                  >
+                    <button
+                      class="mt-1 btn btn-outline-primary w-75 rounded-1 p-3"
+                    >
+                      GitHub<i class="bi bi-github ms-2"></i>
+                    </button>
+                  </a>
+                  <h4>My Social Media</h4>
+                  <div class="container d-flex justify-content-center py-3">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg btn-floating mx-2"
+                      style="width: 50px"
+                    >
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-lg btn-floating mx-2"
+                      style="width: 50px"
+                    >
+                      <i class="bi bi-youtube"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning btn-lg btn-floating mx-2"
+                      style="width: 50px"
+                    >
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="float-text">
+          <p style="margin-bottom: 0px">Click me 💜</p>
+        </div>
+        <div class="float-card-info">
+          <p>
+            coded by <br />
+            Moran Habooba
+          </p>
+
+          <p class="close">❎</p>
+        </div>
+      </div>
+      <!-- ************ -->
+
+      <!-- Footer -->
+
+      <footer>
+        <p>&copy; 2023 Moran 💜 Habooba . All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.float-text {
+  // display: inline-block;
+  // position: absolute;
+  // bottom: -2900px;
+  width: fit-content;
+  background-color: #192227;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+  cursor: pointer;
+  // border: 1px solid white;
+  // margin-bottom: 350px;
+  margin-left: 5px;
+}
+.float-card-info {
+  display: none;
+  width: 100px;
+  // position: absolute;
+  background-color: #263238;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out right;
+  cursor: pointer;
+  background-color: #181e22;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  border-radius: 6px;
+  width: fit-content;
+  // margin: 0 auto;
+  // padding: 10px 10px;
+}
+.float-card-info p {
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.float-card-info.active {
+  display: block;
+  padding: 8px;
+}

@@ -1,0 +1,23 @@
+body {
+  cursor: default;
+}
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+header nav ul li:hover {
+  font-weight: bold;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}

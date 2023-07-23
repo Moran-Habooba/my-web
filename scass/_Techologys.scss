@@ -1,0 +1,56 @@
+.tech-container {
+  width: 110px;
+  height: 110px;
+  background-color: rgb(246, 231, 231);
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+  transition: 0.3s all;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tech-container:hover {
+  background-color: #c6afcd;
+}
+
+.btn {
+  margin-bottom: 10%;
+}
+.btn-form,
+#btn-form:hover {
+  background-color: #c6afcd;
+}
+.form-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 650px;
+}
+.container img {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+.container p {
+  margin-top: -12px;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.tech-container {
+  animation: slideInOut 10s linear infinite;
+}
+
+@media only screen and (max-width: 767px) {
+  .tech-container {
+    margin-left: 5px;
+  }
+}
