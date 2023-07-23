@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Show the first batch of projects (4 projects)
+  // Show the first  projects (4 projects)
   hideAllProjects();
   loadMoreProjects();
 
@@ -80,11 +80,8 @@ function showPopup() {
     confirmButtonText: "אישור",
   });
 }
-// onclick="showPopup()"
 document.addEventListener("contextmenu", function (event) {
-  // מניעת הפעלת התפריט הנפתח ברקע
   event.preventDefault();
 
-  // הפעלת הפונקציה showPopup()
   showPopup();
 });
