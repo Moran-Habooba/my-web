@@ -19,19 +19,16 @@ function toggleDarkMode() {
 document.addEventListener("DOMContentLoaded", function () {
   const projectsPerLoad = 4;
 
-  // Get references to the project container and the "Load More" button
-  // const projectContainer = document.querySelector(".container");
   const loadMoreButton = document.getElementById("loadMoreButton");
 
   // Get all the project cards
   const projectCards = document.querySelectorAll(".card");
 
-  // Variable to keep track of the number of projects already shown
+  //  track of the number of projects already shown
   let projectsShown = 0;
 
   // Function to load more projects when the "Load More" button is clicked
   function loadMoreProjects() {
-    // Calculate the number of projects to show in this batch
     const projectsToShow = Math.min(
       projectsPerLoad,
       projectCards.length - projectsShown

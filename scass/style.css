@@ -26,6 +26,13 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul p {
+  color: white;
+  text-align: right;
+  display: inline;
+  float: right;
+}
+
 #hero {
   background-color: #f2f2f2;
   padding: 0px 0px 15px 0px;
